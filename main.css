@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.bg {
+    background-image: linear-gradient(to left, #1F244D, #4A5A8A, #5A6A9B, #7F9BB3);
+}
+.mainwrapper {
+    width: 100vw;
+    
+}
+
+.headertitle {
+    display: block;
+    width: fit-content;
+    margin: auto;
+   font-family: "Noto Serif Hentaigana", serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 8em; 
+   text-transform: capitalize;
+   letter-spacing: 0.07em;
+   text-align: center; 
+   padding: 4%;
+   padding-bottom: 2%;
+   color: #FFF2F2;
+}
+.inputwrap {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#inputtextl {
+    height: 40px;
+    min-width: 25vw;
+    max-width: 35vw;
+    padding: 0 1em;
+    background-color: #333333;
+    border: none;
+    border-radius: 22px 0 0 22px;
+    font-size: 1em;
+    color: #a3a3a3;
+    
+}
+#submittextl {
+    height: 40px; 
+    border: none;
+    border-radius: 0 22px 22px 0;
+    background-color: #FFF2F2;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out; 
+    padding: 10px 1em  10px 1em;
+}
+#submittextl:hover {
+    background-color: #ffffff;
+    box-shadow: 2px 0 20px rgba(255, 255, 255, 0.7);
+}
+#inputtextl:focus, #inputtextl:focus-visible {
+    outline: none;
+    background-color: #131313;
+}
+.taskswrap {
+    width: 50vw;
+    height: 300px;
+    margin: auto;
+}
+.divwrap {
+    display: flex;
+    align-items: baseline;
+    height: max-content;
+    width: fit-content;
+    padding: 7px;
+    margin: auto;
+    margin-top: 12px;
+    background-color: #333333;
+    border: none;
+    border-radius: 22px;
+    font-size: 1em;
+}
+.divwrap li {
+    height: fit-content;
+    list-style: none;
+    margin-right: 25px;
+    margin-left: 5px;
+    font-size: 1.2em;
+    color: #FFF2F2;
+}
+.uncheckbutton {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background-color: #FFF2F2;
+    border: none;
+    margin-right: 10px;
+    font-size: large;
+    font-weight: 900;
+    border-radius: 50%;
+}
+.uncheckbutton:hover {
+    background-color: #ffffff;
+    box-shadow: 2px 0 20px rgba(255, 255, 255, 0.7);
+}
+.donebutton {
+    opacity: 0.5;
+}
+.donebutton li {
+    text-decoration: line-through;
+}
